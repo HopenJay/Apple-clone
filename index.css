@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 60px;
+    place-content: center;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    position: fixed;
+    /* margin-bottom: 5em; */
+    /* display: pos; */
+    opacity: 0.9;
+}
+
+.header > div:hover {
+cursor: pointer;
+}
+
+/* .item-1{
+    background-color: black;
+    background-blend-mode: overlay;
+} */
+
+.item-1 > img{
+    width: 46.5px;
+    /* height: 50px; */
+    /* background-color: black;
+    background-blend-mode: saturation; */
+    opacity: 0.9;
+}
+
+.nav{
+    margin-top: 2.5em;
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    font-family: sans-serif;
+}
+
+.nav > p a{
+    text-decoration-line: none;
+    color: rgb(101, 101, 245);
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    /* background-color: ghostwhite; */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.item-i{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(245,245,247,255);
+    gap: 1em;
+    cursor: pointer;
+}
+
+.bigP{
+    font-size: 5em;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.smallP{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+.button1{
+    background-color: #0000ff;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.button2{
+    border:1px solid rgb(101, 101, 245);
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background-color:  transparent;
+    color: rgb(101, 101, 245);
+    font-size: 1.2em;
+}
+
+.item-ii{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("images/images.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* gap: 1em; */
+    cursor: pointer;
+}
+
+.big{
+    font-size: 3em;
+    font-weight: bolder;
+    /* margin-top: 2em; */
+}
+
+.small{
+    /* color: pink; */
+    font-size: 1.5em;
+}
+
+.tiny{
+    font-size: 1em;
+    color: rgb(134, 133, 133);
+}
+
+.item-ii button{
+    background-color: #0000ff;
+    color: #fff;
+    border-radius: 50px;
+    height: 50px;
+    width: 100px;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.item-iii{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("images/16-pro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* gap: 1em; */
+    cursor: pointer;
+    /* margin-top: 2em; */
+    color: white;
+}
+
+.Big{
+    color: hsl(0, 0%, 100%);
+    font-size: 3em;
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
+.Small{
+    /* color: #000; */
+    font-size: 1.7em;
+    /* font-weight: bold; */
+}
+
+.item-iii div{
+    margin-top: 0.5em;
+}
+
+.submain{
+    width: 100%;
+    /* border: 1px solid#000; */
+    /* height: 50px; */
+    /* background-color: ; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: minmax(550px, auto);
+    gap: 20px;
+    /* cursor: pointer; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submain div{
+    /* border: 1px solid#000; */
+    cursor: pointer;
+}
+
+.item-iv{
+    /* border: 1px solid #000; */
+    /* width: 100%;
+    height: 650px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("images/14.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* gap: 1em; */
+    cursor: pointer;
+    /* margin-top: 2em; */
+    color: white;
+}
+
+.item-iv div{
+    margin-top: 0.5em;
+    border: 0;
+}
+
+.btn0{
+    background-color: #fff;
+    border-radius: 50px;
+    /* border-radius: 50px; */
+    width: 150px;
+    height: 50px;
+    color: #30336A;
+    font-size: 1.2em;
+}
+
+.btn1{
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background-color:  transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.item-v{
+    /* border: 1px solid #000; */
+    /* width: 100%;
+    height: 650px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("images/ipad-air.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* gap: 1em; */
+    cursor: pointer;
+    /* margin-top: 2em; */
+    color: white;
+    /* background: burlywood;
+    z-index: -1; */
+}
+
+.one{
+    color: #000;
+}
+
+.item-v > p span{
+    color: #156cbd;
+    font-family: cursive;
+}
+
+.item-v > div{
+    border: 0;
+    margin-top: 0.5em;
+}
+
+.change{
+    width: 90%;
+    border: 6px solid black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.change-colour{
+    background-image: linear-gradient(60deg, #0000ff, #e21143, #ffb03a);
+    background-clip: text;
+    color: transparent;
+    /* font-weight: bold; */
+    font-size: 1.2em;
+}
+
+.item-vi{
+    background-image: url("images/airpods-pro.jpg");
+        /* border: 1px solid #000; */
+    /* width: 100%;
+    height: 650px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-image: url("images/ipad-air.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* gap: 1em; */
+    cursor: pointer;
+    /* margin-top: 2em; */
+    color: white;
+    /* background: burlywood;
+    z-index: -1; */
+}
+
+.item-vi div{
+    border: none;
+    margin-bottom: 2em;
+}
+
+.item-vii{
+   background-image: url("images/series\ 10.png");
+    /* border: 1px solid #000; */
+    /* width: 100%;
+    height: 650px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-image: url("images/ipad-air.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* gap: 1em; */
+    cursor: pointer;
+    /* margin-top: 2em; */
+    color: #000;
+    /* background: burlywood;
+    z-index: -1; */
+}
+
+.item-vii .hadto{
+    border: none;
+    display: flex;
+    font-size: 2.5em;
+    font-weight: bold;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.item-vii > .hadto > img{
+    width: 30px;
+}
+
+.item-vii p {
+    font-weight: bolder;
+}
+
+.smaller{
+    font-size: 1.2em;
+}
+
+.item-vii div{
+    border: none;
+    margin-top: 1em;
+}
+
+#hadto1point0{
+    margin-top: 0.5em;
+}
+
+.item-viii{
+    background-image: url("images/Trade-in.png");
+     /* border: 1px solid #000; */
+     /* width: 100%;
+     height: 650px; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     /* background-image: url("images/ipad-air.png"); */
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     /* gap: 1em; */
+     cursor: pointer;
+     /* margin-top: 2em; */
+     color: #000;
+     /* background: burlywood;
+     z-index: -1; */
+ }
+
+ .item-viii .hadto{
+    border: none;
+    display: flex;
+    font-size: 2.5em;
+    font-weight: 500px;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.item-viii > .hadto > img{
+    width: 30px;
+}
+
+.item-viii p {
+    font-weight: bolder;
+}
+
+#smaler{
+    font-size: 1.2em;
+    /* border: 1px solid #000; */
+    width: 350px;
+    /* display: flex;
+    place-content: center; */
+    text-align: center;
+    font-weight: 100px;
+}
+
+.item-viii div{
+    border: none;
+    margin-top: 1em;
+}
+
+#hadto1point1{
+    margin-top: 0.5em;
+}
+
+#butto{
+    width: 190px;
+}
+
+.item-ix{
+    background-image: url("images/Card.png");
+     /* border: 1px solid #000; */
+     /* width: 100%;
+     height: 650px; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     /* background-image: url("images/ipad-air.png"); */
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     /* gap: 1em; */
+     cursor: pointer;
+     /* margin-top: 2em; */
+     color: #000;
+     /* background: burlywood;
+     z-index: -1; */
+ }
+
+ .item-ix .hadto{
+    border: none;
+    display: flex;
+    font-size: 2.5em;
+    font-weight: 500px;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.item-ix > .hadto > img{
+    width: 30px;
+}
+
+.item-ix p {
+    font-weight: bolder;
+}
+
+#smaer{
+    font-size: 1.2em;
+    /* border: 1px solid #000; */
+    width: 300px;
+    /* display: flex;
+    place-content: center; */
+    text-align: center;
+    font-weight: 100px;
+}
+
+.item-ix div{
+    border: none;
+    margin-top: 1em;
+}
+
+#hadto1point2{
+    margin-top: 0.5em;
+}
+
+#butt{
+    width: 150px;
+}
+
+/* Carousel css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel0{
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slides{
+    display: flex;
+    height: 100%;
+    
+}
+
+.slide{
+    min-width: 100%;
+    
+    /* position: relative; When we are adding content to the carousel */
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Carousel ends here. */
+
+.butt_parent{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid #000; */
+    padding: 1em;
+}
+
+.butt_parent button{
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
