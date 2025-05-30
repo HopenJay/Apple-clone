@@ -356,7 +356,7 @@ cursor: pointer;
     width: 30px;
 }
 
-.item-vii p {
+.item-vii p, .bold-only{
     font-weight: bolder;
 }
 
