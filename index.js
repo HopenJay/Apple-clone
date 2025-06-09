@@ -1,5 +1,3 @@
-
-
 const data = [
   {
     class: "item-iv",

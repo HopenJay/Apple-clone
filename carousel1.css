@@ -6,6 +6,7 @@
     display: grid;
     place-items: center;
     overflow: hidden;
+    perspective: 600px;
 }
 
 .carousel1-track {
@@ -13,7 +14,7 @@
     width: calc(250px * 12);
     animation: scroll 40s linear infinite;
     animation-play-state: running;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .carousel1-track.paused {
@@ -39,7 +40,6 @@
     display: flex;
     align-items: center;
     padding: 15px;
-    perspective: 100px;
 }
 
 .carousel1-slide img{
@@ -48,10 +48,11 @@
     min-width: 200px;
     height: 200px;
     transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
 .carousel1-slide img:hover{
-    transform: translateZ(20px);
+    transform: translateZ(40px) scale(1.05);
 }
 /* GRADIENT SHADOWS */
 .carousel1::before,
