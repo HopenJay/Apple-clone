@@ -1,3 +1,56 @@
+// const main = [
+//   {
+//     class: "item-i",
+//     bigP: "Purchase with purpose.",
+//     smallP: "Join us and (RED) in the fight against AIDS.",
+//     div: true,
+//     divContent: {
+//       buttons: [
+//         {class: "button1", text: "Learn more"},
+//         {class: "button2", text: "Shop"}  
+//       ]
+//     },
+//     imgSrc: "images/red.png",
+//     imgAlt: "I took it from their main site a screenshot of a picture of the red Iphones"
+//   }
+// ]
+
+// const mainContainer = document.querySelector(".main");
+
+// main.forEach(item => {
+//   const div = document.createElement("div");
+//   div.className = item.class;
+
+//   //div section if exists.
+//   if(item.div) {
+//     const div = document.createElement("div");
+
+//     // Buttons Div
+//   if(item.buttons && item.buttons.length > 0) {
+//     const buttonsDiv = document.createElement("div");
+//     if(item.buttonsDivId) buttonsDiv.id = item.buttonsDivId;
+
+//     item.buttons.forEach(btn => {
+//       const button = document.createElement("button");
+//       button.className = btn.class || "";
+//       button.textContent = btn.text;
+//       if(btn.id) button.id = btn.id;
+//       buttonsDiv.appendChild(button);
+//     });
+
+//     div.appendChild(buttonsDiv);
+//     div.appendChild(div);
+//   }
+//   }
+
+//   // Big Text
+//   if(item.bigP) {
+//     const bigText = document.createElement("p");
+
+    
+//   }
+// }) I stopped this shit cause the data between the three div were too different
+
 const submain = [
   {
     class: "item-iv",
@@ -116,7 +169,7 @@ submain.forEach(item => {
     const bigP = document.createElement("p");
 
     if(item.class === "item-vii") {
-        bigP.className = "bold-only";
+        // bigP.className = "bold-only"; This shit was a mistake
         bigP.textContent = item.bigText;
         } else {
         // as before
@@ -166,6 +219,7 @@ submain.forEach(item => {
   // Buttons Div
   if(item.buttons && item.buttons.length > 0) {
     const buttonsDiv = document.createElement("div");
+    buttonsDiv.className = "submainButtons";
     if(item.buttonsDivId) buttonsDiv.id = item.buttonsDivId;
 
     item.buttons.forEach(btn => {
@@ -182,6 +236,166 @@ submain.forEach(item => {
   container.appendChild(div);
 });
 
+const carousel0 = [
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/bad-sisters.jpg",
+    imgAlt: "bad-sisters"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/blitz.jpg",
+    imgAlt: "blitz"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/Charlie-brown.jpg",
+    imgAlt: "Charlie-brown"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/disclaimer.jpg",
+    imgAlt: "disclaimer"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/mls.jpg",
+    imgAlt: "mls"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/shrinking.jpg",
+    imgAlt: "shrinking"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/silo.jpg",
+    imgAlt: "silo"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/Slow-horses.jpg",
+    imgAlt: "Slow-horses"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/spirited.jpg",
+    imgAlt: "spirited"
+  },
+  {
+    class: "slide",
+    imgSrc: "Carousel(0)/Ted-lasso.jpg",
+    imgAlt: "Ted-lasso"
+  },
+]
+
+const carousel0Container = document.querySelector(".slides");
+
+carousel0.forEach(item => {
+  const div = document.createElement("div");
+  div.className = item.class;
+
+  if(item.imgSrc && item.imgAlt) {
+    const img = document.createElement("img");
+    img.src = item.imgSrc;
+    img.alt = item.imgAlt;
+
+    div.appendChild(img);
+  }
+
+  carousel0Container.appendChild(div);
+})
+
+const carousel1 = [
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/Balatro_Key-Art.webp",
+    imgAlt: "balatro",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download (1).jpg",
+    imgAlt: "down1",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download (2).jpg",
+    imgAlt: "down2",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download (3).jpg",
+    imgAlt: "down3",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download.jpg",
+    imgAlt: "down",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/images (1).jpg",
+    imgAlt: "img1",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/images.jpg",
+    imgAlt: "img",
+  },
+//Double that shit
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/Balatro_Key-Art.webp",
+    imgAlt: "balatro",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download (1).jpg",
+    imgAlt: "down1",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download (2).jpg",
+    imgAlt: "down2",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download (3).jpg",
+    imgAlt: "down3",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/download.jpg",
+    imgAlt: "down",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/images (1).jpg",
+    imgAlt: "img1",
+  },
+  {
+    class: "carousel1-slide",
+    imgSrc: "Carousel(1)images/images.jpg",
+    imgAlt: "img",
+  },
+]
+
+const carousel1Container = document.querySelector(".carousel1-track");
+
+carousel1.forEach(item => {
+  const div = document.createElement("div");
+  div.className = item.class;
+
+  if(item.imgSrc && item.imgAlt) {
+    const img = document.createElement("img");
+    img.src = item.imgSrc;
+    img.alt = item.imgAlt;
+
+    div.appendChild(img);
+  }
+
+  carousel1Container.appendChild(div);
+})
 
 const slideContainer = document.querySelector('.carousel1'); //This is for the other carousel to be able to enable the pause and play effect
 const slide = document.querySelector('.slides');
