@@ -208,6 +208,10 @@ cursor: pointer;
     cursor: pointer;
 }
 
+.submainButtons button{
+    margin-right: 0.5em;
+}
+
 .item-iv{
     /* border: 1px solid #000; */
     /* width: 100%;
@@ -362,7 +366,7 @@ cursor: pointer;
     width: 30px;
 }
 
-.item-vii p, .bold-only{
+.item-vii p{
     font-weight: bolder;
 }
 
@@ -648,12 +652,12 @@ ul{
     margin-top: 1em;
     font-size: 0.8em;
     color: rgb(0, 0, 0, 0.7);
-    border: 1px solid #000;
-}
-
-.footer-end >div{
     /* border: 1px solid #000; */
 }
+
+/* .footer-end >div{
+    border: 1px solid #000;
+} */
 
 /* .copyright{
     box-sizing: content-box;
