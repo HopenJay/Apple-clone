@@ -1,4 +1,4 @@
-const data = [
+const submain = [
   {
     class: "item-iv",
     bigText: "iPhone 16",
@@ -90,7 +90,7 @@ const data = [
 
 const container = document.getElementById("submain-container");
 
-data.forEach(item => {
+submain.forEach(item => {
   const div = document.createElement("div");
   div.className = item.class;
 
