@@ -1,3 +1,10 @@
+// For the hamburger menu at the top
+document.querySelector('.hamburger').addEventListener('click', () => {
+  document.querySelector('.hamburger').classList.toggle('hambu');
+}
+)
+
+
 // const main = [
 //   {
 //     class: "item-i",
@@ -420,7 +427,7 @@ const slideWidth = slides[index].clientWidth;
 // For the below .style what I think actually happened is that the -1 is put there to act against the translate but I might be wrong. So I may ask chatGPT later.
 slide.style.transform = `translate(${-slideWidth * index}px)`;
 
-console.log(slides);
+// console.log(slides);
 // Fun act I just learnt interval is an inbuilt method that only requires you to input our time using the interval variable and the values you are working with inside the method. I will use more of it as time goes on.
 const startSlide = () => {
     slideId = setInterval(() => {
