@@ -727,3 +727,56 @@ ul{
 .child-fe0{
      color: rgb(0, 0, 0, 0.9);
 }
+
+@media (max-width: 750px) {
+    body{
+        background-color: pink;
+    }
+
+    .hamburger{
+        /* border: 2px solid #000; */
+        height: 10px;
+        width: 40px;
+        background-color: rgba(128, 128, 128, 0.7);
+        z-index: 1001;
+        position: relative;
+        /* margin-bottom: 1em; */
+        border-radius: 10px;
+    }
+
+    .hamburger::before{
+        content: " ";
+        /* border: 2px solid #000; */
+        height: 10px;
+        width: 40px;
+        background-color: rgba(128, 128, 128, 0.7);
+        position: absolute;
+        bottom: 0.7em;
+        border-radius: 10px;
+    }
+
+    .hamburger::after{
+        content: " ";
+        /* border: 2px solid #000; */
+        height: 10px;
+        width: 40px;
+        background-color: rgba(128, 128, 128, 0.7);
+        position: absolute;
+        top: 0.7em;
+        border-radius: 10px;
+    }
+
+    .hamburger.hambu{
+        background-color: transparent;
+    }
+
+    .hamburger.hambu::after{
+        content: " ";
+        transform: rotate(45deg) translate(-7px, -5px) scale(1.1);
+    }
+
+    .hamburger.hambu::before{
+        content: " ";
+        transform: rotate(-45deg) translate(-10px, 8px)scale(1.1);
+    }
+}
