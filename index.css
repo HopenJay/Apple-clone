@@ -729,9 +729,9 @@ ul{
 }
 
 @media (max-width: 750px) {
-    body{
+    /* body{
         background-color: pink;
-    }
+    } */
 
     .hamburger{
         /* border: 2px solid #000; */
@@ -739,9 +739,10 @@ ul{
         width: 40px;
         background-color: rgba(128, 128, 128, 0.7);
         z-index: 1001;
-        position: relative;
+        position: fixed;
         /* margin-bottom: 1em; */
         border-radius: 10px;
+        transition:  transform 0.4s ease, top 0.4s ease, bottom 0.4s , background-color 0.4s ease;
     }
 
     .hamburger::before{
@@ -752,7 +753,8 @@ ul{
         background-color: rgba(128, 128, 128, 0.7);
         position: absolute;
         bottom: 0.7em;
-        border-radius: 10px;
+        border-radius: 10px; 
+        transition: transform 0.4s ease, top 0.4s ease, bottom 0.4s ease;
     }
 
     .hamburger::after{
@@ -763,20 +765,39 @@ ul{
         background-color: rgba(128, 128, 128, 0.7);
         position: absolute;
         top: 0.7em;
-        border-radius: 10px;
+        border-radius: 10px; 
+        transition:  transform 0.4s ease, top 0.4s ease, bottom 0.4s ease;
     }
 
     .hamburger.hambu{
-        background-color: transparent;
+        background-color: transparent; 
+        transition:  transform 0.4s ease, top 0.4s ease, bottom 0.4s ease, left 0.4s ease, background-color 0.4s ease;
     }
 
     .hamburger.hambu::after{
         content: " ";
-        transform: rotate(45deg) translate(-7px, -5px) scale(1.1);
+        transform: rotate(45deg) translate(165px, -175px) scale(1.1);  
+        transition:  transform 0.4s ease, top 0.4s ease, bottom 0.4s ease;
     }
 
     .hamburger.hambu::before{
         content: " ";
-        transform: rotate(-45deg) translate(-10px, 8px)scale(1.1);
+        transform: rotate(-45deg) translate(160px, 180px)scale(1.1);
+        transition:  transform 0.4s ease, top 0.4s ease, bottom 0.4s ease, left 3s ease;
+    }
+
+    .header{
+        flex-direction: column;
+        border: 1px solid #000;
+        height: 100vh;
+        width: 300px;
+        transform: translateX(-300px);
+        gap: 2em;
+        /* align-items: start; */
+        transition: transform 0.4s ease;
+    }
+
+    .header.head{
+        transform: translateX(0);
     }
 }
