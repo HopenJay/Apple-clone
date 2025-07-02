@@ -800,4 +800,8 @@ ul{
     .header.head{
         transform: translateX(0);
     }
+
+    .nav{
+        display: none;
+    }
 }
