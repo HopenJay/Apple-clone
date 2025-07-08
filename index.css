@@ -728,11 +728,15 @@ ul{
      color: rgb(0, 0, 0, 0.9);
 }
 
+.dropdown{
+    display: none;
+}
+
+/* @media (max-width: 1001.9844px) {} */
 @media (max-width: 750px) {
     /* body{
         background-color: pink;
     } */
-
     .hamburger{
         /* border: 2px solid #000; */
         height: 10px;
@@ -803,5 +807,54 @@ ul{
 
     .nav{
         display: none;
+    }
+
+    /* The footer's css */
+    .extra-info{
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .footer-lists{
+        width: 100%;
+        height: fit-content;
+    }
+
+    nav{ display: none;}
+
+    .show{
+        display: block;
+    }
+
+    .footer-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    /* .sub-head::after{
+        content: "\25BC";
+        margin-left: 10PX;
+    } */
+
+    .dropdown{
+        display: inline-block;
+    }
+
+    .ent,
+    .app,
+    .edu,
+    .health,
+    .gov,
+    .abt_app{
+        margin-top: 0em;
+    }
+
+    .footer-list{
+        line-height: 2em;
     }
 }
