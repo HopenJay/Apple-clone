@@ -238,6 +238,7 @@ cursor: pointer;
     gap: 20px;
     /* cursor: pointer; */
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 .submain div{
@@ -736,7 +737,7 @@ ul{
     .extra-info{
         width: 100%;
     }
-    
+
     hr{
         width: 100%;
     }
